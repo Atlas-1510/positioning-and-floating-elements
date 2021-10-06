@@ -3,3 +3,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .ns-button {
+    @apply text-white p-2 rounded m-1 font-semibold font-titillium;
+  }
+}
