@@ -9,7 +9,7 @@
   </head>
   <body class="relative p-5 grid grid-cols-1 justify-items-center">
     <header
-      class="w-full max-w-screen-lg items-center flex justify-between my-2"
+      class="w-full max-w-screen-ns items-center flex justify-between my-2"
     >
       <div class="w-60">
         <h2 class="text-ns-blue font-bold uppercase font-titillium">
@@ -48,7 +48,7 @@
         bg-white
       "
     >
-      <div class="max-w-screen-lg flex justify-between my-2">
+      <div class="max-w-screen-ns flex justify-between my-2">
         <ul class="font-titillium font-bold flex justify-between text-lg">
           <li class="mr-3">News</li>
           <li class="mr-3">Podcasts</li>
@@ -117,15 +117,7 @@
       </div>
     </nav>
     <main
-      class="
-        h-screen
-        w-full
-        max-w-screen-lg
-        grid-cols-4 grid
-        gap-5
-        py-5
-        text-gray-600
-      "
+      class="w-full max-w-screen-ns grid-cols-4 grid gap-5 py-5 text-gray-600"
     >
       <div class="col-span-3">
         <section class="font-titillium">
@@ -689,7 +681,94 @@
           </div>
         </section>
       </div>
-      <div class="col-start-4 bg-yellow-400"></div>
+      <div class="col-start-4">
+        <div class="w-full sticky top-16 flex flex-col">
+          <div class="flex justify-between text-xs">
+            <button
+              class="
+                bg-ns-blue
+                px-3
+                py-1
+                uppercase
+                font-titillium font-bold
+                text-white
+              "
+            >
+              Trending
+            </button>
+            <button
+              class="
+                bg-ns-beige
+                px-3
+                py-1
+                uppercase
+                font-titillium font-bold
+                text-black
+              "
+            >
+              Latest
+            </button>
+            <button
+              class="
+                bg-ns-beige
+                px-3
+                py-1
+                uppercase
+                font-titillium font-bold
+                text-black
+              "
+            >
+              Video
+            </button>
+            <button
+              class="
+                bg-ns-beige
+                px-3
+                py-1
+                uppercase
+                font-titillium font-bold
+                text-black
+              "
+            >
+              Free
+            </button>
+          </div>
+          <ol
+            class="font-titillium text-gray-600 text-lg font-bold counter-reset"
+          >
+            <li class="side-nav-item">
+              <a
+                >How <italic>MineCraft</italic> is helping children with autism
+                make new friends</a
+              >
+            </li>
+            <li class="side-nav-item">
+              <a
+                >Facebook, WhatsApp, and Instagram back online after global
+                outage</a
+              >
+            </li>
+            <li class="side-nav-item">
+              <a
+                >Scientists have finally worked out the effects of consuming red
+                wine</a
+              >
+            </li>
+            <li class="side-nav-item">
+              <a
+                >Covid-19 news: Pfizer vaccine 90% effective against
+                hospitalisation</a
+              >
+            </li>
+            <li class="side-nav-item">
+              <a
+                >Woman's depression treated by an implant responding to brain
+                patterns</a
+              >
+            </li>
+          </ol>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>

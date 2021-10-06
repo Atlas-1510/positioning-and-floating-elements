@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "ns-blue": "rgb(78, 177, 224)",
+        "ns-blue": "#00b3e5",
         "ns-button-blue": "rgb(0, 85, 135)",
         "ns-gray": "rgb(142, 142, 142)",
         "ns-beige": "rgb(244,244,243)",

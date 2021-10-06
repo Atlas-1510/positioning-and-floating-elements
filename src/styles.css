@@ -8,4 +8,30 @@
   .ns-button {
     @apply text-white p-2 rounded m-1 font-semibold font-titillium;
   }
+  .side-nav-item {
+    @apply bg-ns-beige
+                leading-6
+                p-2
+                my-1
+                flex
+                items-center
+                cursor-pointer
+                counter-increment
+                after:content-[counter(section)]
+                after:text-ns-blue
+                after:text-3xl
+                after:ml-2;
+  }
+}
+
+@layer utilities {
+  .max-w-screen-ns {
+    max-width: 1100px;
+  }
+  .counter-reset {
+    counter-reset: section;
+  }
+  .counter-increment {
+    counter-increment: section;
+  }
 }
