@@ -4,7 +4,115 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="./build/styles.css" />
+    <title>Positioning and Floating Elements</title>
   </head>
-  <body></body>
+  <body class="relative p-5 grid grid-cols-1 justify-items-center">
+    <header class="w-full max-w-screen-lg items-center">
+      <div class="flex justify-between my-2">
+        <div class="w-60">
+          <h2 class="text-ns-blue font-bold uppercase font-titillium">
+            Newsletters
+          </h2>
+          <p class="text-ns-gray font-serif leading-6">
+            Sign up to read our regular email newsletters
+          </p>
+        </div>
+        <h1 class="text-7xl font-titillium font-bold self-start">
+          NewScientist
+        </h1>
+        <button
+          class="
+            bg-ns-blue
+            text-white
+            w-60
+            self-start
+            justify-self-end
+            rounded
+            p-1
+            uppercase
+            font-semibold font-titillium
+            text-sm
+          "
+        >
+          Subscribe and save 50%
+        </button>
+      </div>
+      <div class="flex justify-between my-2">
+        <nav>
+          <ul class="font-titillium font-bold flex justify-between text-lg">
+            <li class="mr-3">News</li>
+            <li class="mr-3">Podcasts</li>
+            <li class="mr-3">Video</li>
+            <li class="mr-3">Technology</li>
+            <li class="mr-3">Space</li>
+            <li class="mr-3">Physics</li>
+            <li class="mr-3">Health</li>
+            <li class="mr-3 flex justify-center items-center">
+              More
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4 ml-2"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                />
+              </svg>
+            </li>
+            <li class="mr-3 text-ns-blue">Shop</li>
+            <li class="mr-3 text-ns-blue">Courses</li>
+            <li class="mr-3 text-ns-blue">Events</li>
+            <li class="mr-3 text-ns-blue">Tours</li>
+            <li class="mr-3 text-ns-blue">Jobs</li>
+          </ul>
+        </nav>
+
+        <div class="flex overflow-hidden">
+          <button
+            class="flex font-titillium font-bold items-center w-40 justify-end"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-1"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>Sign In</span>
+          </button>
+          <button
+            class="flex font-titillium font-bold items-center w-40 justify-end"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 mr-1"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                clip-rule="evenodd"
+              />
+            </svg>
+            <span>Search</span>
+          </button>
+        </div>
+      </div>
+      <div class="absolute left-0 border-b w-screen border-gray-400"></div>
+    </header>
+    <main></main>
+    <footer></footer>
+  </body>
 </html>
